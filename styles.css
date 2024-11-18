@@ -167,6 +167,51 @@ nav {
   }
 }
 
+.our-services-container {
+  margin-top: 5rem;
+  background-color: var(--color-gray);
+
+  & h3 {
+    margin-left: 5rem;
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  & div {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+
+    & div {
+      padding: 1rem;
+      border: 2px solid var(--color-primary-blue);
+      border-radius: 8px;
+    }
+
+    & ul {
+      list-style: none;
+
+      & h4 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      & li {
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+.energy-plans-container {
+  margin-top: 5rem;
+  height: 100vh;
+}
+
 .contact-container {
   margin-top: 5rem;
   height: 100vh;
