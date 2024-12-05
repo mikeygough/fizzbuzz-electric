@@ -13,139 +13,290 @@
       name="description"
       content=" FizzBuzz-Electric is a sample page to toy around with modern CSS & intrinsic design"
     />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body id="fizzbuzz-electric">
     <div class="page-wrapper">
+      <!-- ================================            ================================ -->
+      <!-- ================================ navigation ================================ -->
+      <!-- ================================            ================================ -->
       <section>
-        <nav>
-          <div class="nav-logo">
-            <h1>FizzBuzz-Electric</h1>
+        <nav class="navbar">
+          <div class="navbar__brand">
+            <h1 class="navbar__company-name">FizzBuzz-Electric</h1>
           </div>
-          <div class="nav-items">
-            <ul>
-              <li></li>
-              <li>Our Services</li>
-              <li>Energy Plans</li>
-              <li>Savings Calculator</li>
+
+          <div class="navbar__menu">
+            <ul class="navbar__list">
+              <li class="navbar__item">Our Services</li>
+              <li class="navbar__item">Energy Plans</li>
             </ul>
           </div>
-          <div class="nav-CTA">
-            <p>Contact Us</p>
-          </div>
+
+          <a class="navbar__cta">Contact Us</a>
         </nav>
       </section>
 
+      <!-- ================================      ================================ -->
+      <!-- ================================ hero ================================ -->
+      <!-- ================================      ================================ -->
       <section>
-        <div class="hero-container">
-          <div class="hero-text">
-            <h2>Join Us in Electrifying the Future!</h2>
-            <p>
-              Switch to FizzBuzz Electric today and experience the
-              difference that reliable, innovative, and sustainable
-              power can make. With tailored plans to suit every
-              lifestyle and budget, there’s a perfect fit waiting for
-              you. Get ready to flip the switch and see how FizzBuzz
-              Electric lights up your world!
+        <div class="hero__container">
+          <div class="hero__content">
+            <h2 class="hero__heading">
+              Power Up Your World with
+              <span class="hero__heading-highlight"
+                >FizzBuzz Electric</span
+              >!
+            </h2>
+
+            <p class="hero__description">
+              We're not just another utility company – we're your
+              partners in powering tomorrow. From smart home solutions
+              to renewable energy plans that make sense for your
+              wallet, FizzBuzz Electric brings the future of power
+              right to your doorstep. Ready to spark something
+              amazing?
             </p>
-            <div class="hero-buttons">
-              <a class="hero-button-primary">Contact Us</a>
-              <a class="hero-button-secondary">Learn More</a>
+
+            <div class="hero__buttons">
+              <a class="hero__button hero__button-primary">
+                Contact Us
+                <span class="hero__button-chevron"></span>
+              </a>
+              <a class="hero__button hero__button-secondary">
+                Learn More
+                <span class="hero__button-chevron"></span>
+              </a>
             </div>
           </div>
-          <div class="hero-img">
-            <!-- image goes here with CSS as a background image -->
+
+          <div class="hero__image"></div>
+        </div>
+      </section>
+
+      <!-- ================================          ================================ -->
+      <!-- ================================ services ================================ -->
+      <!-- ================================          ================================ -->
+      <section>
+        <div class="services__container">
+          <h3 class="services__heading">Our Services</h3>
+
+          <div class="services__grid">
+            <!-- residential services -->
+            <div class="services__column">
+              <ul class="services__list">
+                <li class="services__category-item">
+                  <h4 class="services__category-title">
+                    Residential Services
+                  </h4>
+                </li>
+                <li class="services__item">
+                  Home Safety Inspections
+                </li>
+                <li class="services__item">
+                  Smart Home Device Integration
+                </li>
+                <li class="services__item">
+                  Energy Usage Monitoring
+                </li>
+                <li class="services__item">
+                  Emergency Power Outage Response
+                </li>
+                <li class="services__item">
+                  EV Charging Station Installation
+                </li>
+                <li class="services__item">
+                  Solar Panel Installation
+                </li>
+                <li class="services__item">
+                  Energy Storage Solutions
+                </li>
+                <li class="services__item">
+                  Smart Meter Installation
+                </li>
+                <li class="services__item">
+                  Peak Hour Usage Optimization
+                </li>
+                <li class="services__item">
+                  Whole-House Surge Protection
+                </li>
+                <li class="services__item">
+                  Renewable Energy Integration
+                </li>
+              </ul>
+            </div>
+
+            <!-- commercial services -->
+            <div class="services__column">
+              <ul class="services__list">
+                <li class="services__category-item">
+                  <h4 class="services__category-title">
+                    Commercial Services
+                  </h4>
+                </li>
+                <li class="services__item">
+                  Industrial Wiring Systems
+                </li>
+                <li class="services__item">
+                  Energy Efficiency Audits
+                </li>
+                <li class="services__item">
+                  Commercial Fire Alarm Systems
+                </li>
+                <li class="services__item">Parking Lot Lighting</li>
+                <li class="services__item">
+                  Data Center Power Solutions
+                </li>
+                <li class="services__item">
+                  Office Building Rewiring
+                </li>
+                <li class="services__item">
+                  Emergency Backup Systems
+                </li>
+                <li class="services__item">Power Quality Analysis</li>
+                <li class="services__item">
+                  Security Lighting Installation
+                </li>
+                <li class="services__item">
+                  Industrial Equipment Hook-up
+                </li>
+                <li class="services__item">
+                  Smart Building Automation
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- ================================       ================================ -->
+      <!-- ================================ plans ================================ -->
+      <!-- ================================       ================================ -->
       <section>
-        <div class="our-services-container">
-          <h3>Our Services</h3>
-          <div>
-            <div class="services-column">
-              <ul>
-                <li><h4>Residential Services</h4></li>
-                <li>Electrical Panel Upgrades</li>
-                <li>Home Safety Inspections</li>
-                <li>Smart Home Device Installation</li>
-                <li>Emergency Power Outage Response</li>
-                <li>Ceiling Fan Installation</li>
-                <li>Outdoor Lighting Design & Installation</li>
-                <li>EV Charging Station Installation</li>
-                <li>Whole-House Surge Protection</li>
-                <li>Kitchen & Bath Lighting Upgrades</li>
-                <li>Home Generator Installation</li>
+        <div class="energy-plans__container">
+          <h3 class="energy-plans__title">Energy plans</h3>
+
+          <div class="energy-plans__grid">
+            <!-- essential spark plan -->
+            <div class="energy-plan">
+              <h4 class="energy-plan__title">Essential Spark</h4>
+              <p class="energy-plan__description">
+                Perfect for apartments and small homes focused on
+                efficient energy use.
+              </p>
+              <p class="energy-plan__price">50</p>
+              <ul class="energy-plan__features">
+                <li>Smart meter installation included</li>
+                <li>Basic usage monitoring app</li>
+                <li>24/7 support</li>
+                <li>Green energy options available</li>
               </ul>
             </div>
 
-            <div class="services-column">
-              <ul>
-                <li><h4>Commercial Services</h4></li>
-                <li>Industrial Wiring Systems</li>
-                <li>Energy Efficiency Audits</li>
-                <li>Commercial Fire Alarm Systems</li>
-                <li>Parking Lot Lighting</li>
-                <li>Data Center Power Solutions</li>
-                <li>Office Building Rewiring</li>
-                <li>Emergency Backup Systems</li>
-                <li>Power Quality Analysis</li>
-                <li>Security Lighting Installation</li>
-                <li>Industrial Equipment Hook-up</li>
+            <!-- power plus plan -->
+            <div class="energy-plan energy-plan-popular">
+              <h4 class="energy-plan__title">Power Plus</h4>
+              <p class="energy-plan__description">
+                Ideal for medium-sized homes with moderate energy
+                needs.
+              </p>
+              <p class="energy-plan__price">100</p>
+              <ul class="energy-plan__features">
+                <li>Everything in Essential Spark</li>
+                <li>Smart home device integration</li>
+                <li>Peak hour optimization</li>
+                <li>Monthly energy insights report</li>
+              </ul>
+            </div>
+
+            <!-- ultimate power plan -->
+            <div class="energy-plan">
+              <h4 class="energy-plan__title">Ultimate Power</h4>
+              <p class="energy-plan__description">
+                For larger homes or businesses with comprehensive
+                energy needs.
+              </p>
+              <p class="energy-plan__price">150</p>
+              <ul class="energy-plan__features">
+                <li>Everything in Power Plus</li>
+                <li>100% renewable energy</li>
+                <li>Energy storage solutions</li>
+                <li>Priority service response</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ================================         ================================ -->
+      <!-- ================================ contact ================================ -->
+      <!-- ================================         ================================ -->
       <section>
-        <div class="energy-plans-container"></div>
-      </section>
+        <div class="contact__container">
+          <h3 class="contact__title">Contact Us</h3>
+          <form class="contact-form">
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="name"
+                >Name</label
+              >
+              <input
+                class="contact-form__input"
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required
+                minlength="5"
+                maxlength="50"
+              />
+            </div>
 
-      <section>
-        <div class="contact-container">
-          <h3>Contact Us</h3>
-          <form>
-            <!-- name field -->
-            <label for="name">Name</label>
-            <input
-              type="name"
-              id="name"
-              placeholder="Full Name"
-              required
-              minlength="5"
-              maxlength="50"
-            />
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="email"
+                >Email</label
+              >
+              <input
+                class="contact-form__input"
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+                minlength="5"
+                maxlength="50"
+              />
+            </div>
 
-            <!-- email field -->
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Email"
-              required
-              minlength="5"
-              maxlength="50"
-            />
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="inquiry"
+                >Inquiry</label
+              >
+              <textarea
+                class="contact-form__input contact-form__input--textarea"
+                id="inquiry"
+                placeholder="I need help with..."
+                required
+                minlength="5"
+                maxlength="500"
+              ></textarea>
+            </div>
 
-            <!-- inquiry field -->
-            <label for="inquiry">Inquiry</label>
-            <textarea
-              id="inquiry"
-              placeholder="I need your help with..."
-              required
-              minlength="5"
-              maxlength="500"
-            ></textarea>
-
-            <!-- checkbox for services field -->
-            <!-- TODO -->
-
-            <!-- submit -->
-            <input
-              type="submit"
-              name="submit"
-              value="Submit Inquiry"
-            />
+            <button class="contact-form__submit" type="submit">
+              Submit Inquiry
+            </button>
           </form>
         </div>
       </section>
